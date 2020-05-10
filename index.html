@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <button id="btn">Generate Quote</button>
+        <div class="quote-container">
+            <h3 id="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, assumenda.</h3>
+            <p id="quote-author">Anonymous</p>
+        </div>
+    </div>
+</body>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        min-width: 500px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: burlywood; 
+    }
+    
+    .container {
+        padding: 65px 50px;
+        background-color: rgba(255, 255, 255, 0.5);
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    #btn {
+        padding: 15px;
+        border: none;
+        background-color: green;
+        box-shadow: black 1px 1px 2px;
+        margin: 0 auto;
+        text-align: center;
+        color: white;
+        font-size: 1.5rem;
+    }
+    #btn:hover {
+        color: black;
+        background-color: burlywood;
+    }
+
+    #quote {
+        margin-top: 20px;
+        font-size: 1.9rem;
+        color: #6c757d;
+    }
+    #quote::before{
+        content: '↬';
+        font-size: 3rem;
+    }
+
+    #quote-author {
+        margin-top: 10px;
+        text-align: right;
+        color: green;
+        font-size: 1.3rem;
+    }
+</style>
+<script src="./app.js"></script>
+</html>
