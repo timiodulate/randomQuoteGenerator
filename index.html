@@ -22,7 +22,7 @@
     }
 
     body{
-        min-width: 500px;
+        width: 100vw;
         height: 100vh;
         display: flex;
         justify-content: center;
@@ -68,6 +68,34 @@
         text-align: right;
         color: green;
         font-size: 1.3rem;
+    }
+
+    @media only screen and (max-width: 765px) {
+        .container {
+            width: 80%;
+            padding: 35px 20px;
+        }
+
+        #btn {
+            font-size: .9rem;
+            padding: 5px;
+        }
+
+        .quote-container {
+            width: 100%;
+        }
+
+        #quote {
+            font-size: 1.2rem;
+        }
+
+        #quote::before{
+            font-size: 2rem;
+        }
+
+        #quote-author {
+            font-size: .7rem;
+        }
     }
 </style>
 <script src="./app.js"></script>
